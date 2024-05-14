@@ -1,43 +1,9 @@
-/* .layout {
-  background-color: #d4c6ff;
-}
-
-.header-container {
-  padding: 1vh 3vw;
-  width: 100%;
-  display: inline;
-}
-
-.header-content {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bolder;
-  display: inline;
-
-  .name-logo-link {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    width: 25%;
-  }
-
-  .name-logo-link:hover {
-    color: #d9abff;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .page-list {
-    ul {
-      float: right;
-    }
-  }
-} */
-
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
+  line-height: 1.5;
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -45,9 +11,11 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 nav {
-  background: #d9eeff;
-  height: 80px;
+  background: whitesmoke;
   width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
 }
 
 label.logo {
@@ -60,6 +28,7 @@ label.logo {
 nav ul {
   float: right;
   margin-right: 40px;
+  margin-bottom: 0px;
 }
 nav ul li {
   display: inline-block;
@@ -76,9 +45,9 @@ nav ul li a {
 }
 a.active,
 a:hover {
-  background: #cfcfcf;
+  /* background: #cfcfcf; */
   transition: 0.5s;
-  text-decoration: none !important;
+  text-decoration: underline !important;
   color: #1e1e1e !important;
 }
 .checkbtn {
@@ -94,24 +63,133 @@ a:hover {
   display: none;
 }
 .top-section {
-  background: #d9eeff;
+  background: #1d1d1d;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 40px 50px;
+  margin-top: 80px;
 }
-.cover-photo-container {
+
+.cover-photo {
+  width: 20%;
+  height: 20%;
+}
+
+.cover-description {
+  color: rgb(236, 236, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15%;
+}
+.cover-label {
+  font-size: 40pt;
+  text-align: left;
+}
+
+.shop-now {
+  color: rgb(203, 203, 203);
+  font-size: 32pt;
+}
+
+.cover-purchase-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: fit-content;
+}
+
+.purchase-link:hover {
+  text-decoration: none !important;
+}
+
+.purchase-button {
+  display: flex;
+  color: white;
+  font-size: 16px;
+  width: fit-content;
+  padding: 5px 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 3px solid rgb(203, 203, 203);
+}
+.purchase-button:hover {
+  border: 3px solid rgb(142, 142, 142);
+  color: rgb(142, 142, 142) !important;
+}
+
+.purchase-button-text {
+  color: white;
+}
+.purchase-button-text:hover {
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+  padding-bottom: 2%;
+}
+
+.about-header {
+  font-weight: bold;
+}
+.about-credit {
+  padding-top: 1%;
+}
+.about-photo {
+  width: 25%;
+}
+
+.about-text {
+  padding: 3% 15%;
+  font-size: 20px;
+}
+
+.awards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+  padding-top: 0;
+}
+
+.award {
+  width: 100%;
+  padding: 1% 15%;
+  font-size: 20px;
+}
+
+.award-images {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+
+.award-image {
+  width: 25%;
+}
+
+.footer-container {
+  background: #464646;
+  padding: 4%;
+}
+
+.link-icons {
   display: flex;
   justify-content: center;
-  width: 100%;
-  gap: 15%;
-  padding: 100px 150px;
+  gap: 1%;
+}
 
-  .cover-photo {
-    width: 25%;
-    height: 25%;
-  }
-
-  .cover-description {
-    font-size: 48pt;
-    text-align: left;
-  }
+.icon {
+  width: 35px;
+  height: 35px;
 }
 
 .fa-bars {
@@ -158,8 +236,8 @@ a:hover {
     left: 0;
   }
 }
-section {
+/* section {
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
-}
+} */
