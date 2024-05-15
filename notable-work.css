@@ -61,6 +61,7 @@ a:hover {
   text-decoration: underline !important;
   color: #1e1e1e !important;
 }
+
 .checkbtn {
   font-size: 30px;
   color: white;
@@ -73,145 +74,100 @@ a:hover {
 #check {
   display: none;
 }
-.top-section {
-  /* background: #1d1d1d; */
-  background-image: url("./images/black-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 40px 50px;
+
+.recent-work-container {
   margin-top: 80px;
-}
-
-.cover-photo {
-  width: 20%;
-  height: 20%;
-}
-
-.cover-description {
-  color: rgb(236, 236, 236);
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-  height: 100%;
-  width: 40%;
-  margin: 3% 0;
-}
-.cover-label {
-  font-size: 40pt;
-  text-align: left;
-}
-
-.shop-now {
-  color: rgb(203, 203, 203);
-  font-size: 32pt;
-}
-
-.cover-purchase-buttons {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   width: 100%;
-  gap: 1em;
-  height: fit-content;
-}
-
-.purchase-link:hover {
-  text-decoration: none !important;
-}
-
-.purchase-button {
-  display: flex;
-  color: white;
-  font-size: 16px;
-  width: 100%;
-  gap: 5%;
-  padding: 5px 15px;
   justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: 3px solid rgb(203, 203, 203);
-}
-.purchase-button:hover {
-  border: 3px solid rgb(142, 142, 142);
-  color: rgb(142, 142, 142) !important;
+  padding: 2% 0%;
+  font-size: 32px;
+  text-align: center;
 }
 
-.purchase-button-text {
-  color: white;
-}
-.purchase-button-text:hover {
-  color: white;
+.recent-work-link {
+  text-decoration: underline;
+  color: black;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 5%;
-  padding-bottom: 2%;
+.recent-work-link:hover {
+  transition: 0s;
+  color: rgb(122, 122, 122) !important;
 }
 
-.about-header {
-  font-weight: bold;
-}
-.about-credit {
-  padding-top: 1%;
-}
-.about-photo {
-  width: 25%;
-}
-
-.about-text {
-  padding: 3% 15%;
-  font-size: 20px;
-}
 hr {
   margin: 3%;
   margin-top: 0;
 }
 
-.awards-container {
+.notable-work-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 0% 15%;
   width: 100%;
-  padding: 5%;
-  padding-top: 0;
-}
-
-.award {
-  padding: 1%;
-}
-
-.awards-section-label {
-  font-size: 48px;
-}
-
-.award-title {
-  font-size: 32px;
-  font-style: italic;
-  text-align: center;
-}
-
-.award-description {
-  padding: 3% 15%;
-  padding-top: 1%;
-  /* padding-bottom: 7%; */
   font-size: 20px;
 }
 
-/* .award-images {
+.notable-work-item {
   display: flex;
-  justify-content: space-evenly;
-  padding: 2%;
+  flex-direction: column;
+  max-width: 60%;
 }
 
-.award-image {
-  width: 25%;
+.item-title {
+  font-size: 32px;
+  font-style: italic;
+  padding-bottom: 3%;
+  text-align: center;
+}
+.item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+.first-paragraph {
+  display: flex;
+}
+.first-paragraph-text {
+  width: 50%;
+}
+
+.first-paragraph-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.blackwidow-image {
+  width: 333px;
+  height: 500px;
+} */
+
+/* .photo-gallery-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.photo-slide {
+  display: none;
+  width: 20%;
+  height: 20%;
+} */
+
+/* .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
 } */
 
 .footer-container {
@@ -275,8 +231,3 @@ hr {
     left: 0;
   }
 }
-/* section {
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-} */
