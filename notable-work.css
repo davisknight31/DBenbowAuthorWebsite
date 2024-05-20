@@ -110,8 +110,8 @@ hr {
 }
 
 .notable-work-item {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   max-width: 60%;
 }
 
@@ -124,8 +124,23 @@ hr {
 .item-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+/* .image-container {
+  display: flex;
+  flex-direction: column;
+  float: right;
+} */
+
+.blackwidow-image {
+  float: right;
+  width: 25%;
+  max-width: 250px;
+  margin: 3%;
+}
+.credit {
+  float: right;
 }
 
 /* 

@@ -88,20 +88,51 @@ a:hover {
 .headshot {
   width: 30%;
   height: 30%;
+  max-width: 400px;
 }
 .headshot-credit {
   padding-top: 1%;
 }
 
 .about-text {
-  padding: 3% 15%;
-  padding-bottom: 7%;
+  padding: 2% 15%;
   font-size: 20px;
+}
+
+hr {
+  margin: 0% 3%;
+}
+
+.questions-container {
+  padding: 1% 15%;
+  font-size: 20px;
+}
+
+.question {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 2% 0%;
+}
+
+.answer {
+  color: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.open {
+  max-height: 1000px; /* Adjust this value according to your content */
 }
 
 .footer-container {
   background: #464646;
   padding: 4%;
+  display: flex;
+  flex-direction: column;
 }
 
 .link-icons {

@@ -163,6 +163,7 @@ a:hover {
 }
 .about-photo {
   width: 25%;
+  max-width: 400px;
 }
 
 .about-text {
@@ -184,7 +185,11 @@ hr {
 }
 
 .award {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1%;
+  width: 100%;
 }
 
 .awards-section-label {
@@ -195,6 +200,7 @@ hr {
   font-size: 32px;
   font-style: italic;
   text-align: center;
+  max-width: 75%;
 }
 
 .award-description {
@@ -217,6 +223,9 @@ hr {
 .footer-container {
   background: #464646;
   padding: 4%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .link-icons {
