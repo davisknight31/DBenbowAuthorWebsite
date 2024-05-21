@@ -9,6 +9,12 @@
 }
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 100vh;
+}
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-link {
@@ -38,7 +44,7 @@ label.logo {
 }
 nav ul {
   float: right;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   margin-bottom: 0px;
 }
 nav ul li {
@@ -104,15 +110,14 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0% 15%;
   width: 100%;
   font-size: 20px;
 }
 
 .notable-work-item {
-  /* display: flex;
-  flex-direction: column; */
-  max-width: 60%;
+  width: 100%;
+  max-width: 3000px;
+  padding: 0% 15%;
 }
 
 .item-title {
@@ -133,10 +138,11 @@ hr {
   float: right;
 } */
 
-.blackwidow-image {
+.item-image {
   float: right;
   width: 25%;
   max-width: 250px;
+  min-width: 200px;
   margin: 3%;
 }
 .credit {
@@ -188,6 +194,9 @@ hr {
 .footer-container {
   background: #464646;
   padding: 4%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 
 .link-icons {
@@ -205,10 +214,11 @@ hr {
 .fa-bars {
   color: black;
 }
+
 @media (max-width: 1020px) {
   label.logo {
     font-size: 30px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
   nav ul li a {
     font-size: 16px;
@@ -223,11 +233,14 @@ hr {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #383838;
+    background: #c2c2c2;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+  }
+  nav {
+    padding-right: 25px;
   }
   nav ul li {
     display: block;
@@ -239,10 +252,44 @@ hr {
   }
   a:hover,
   a.active {
-    background: #cfcfcf;
+    background: #e2e2e2;
     color: #0082e6;
   }
   #check:checked ~ ul {
     left: 0;
+  }
+  .recent-work-container {
+    padding: 2% 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    padding-right: 0px;
+  }
+  label.logo {
+    padding-left: 25px;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-image {
+    float: none;
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding-right: 0px;
+  }
+  label.logo {
+    font-size: 24px;
+    padding-left: 15px;
+  }
+  .notable-work-item {
+    padding: 0% 10%;
   }
 }

@@ -9,6 +9,12 @@
 }
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 100vh;
+}
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-link {
@@ -38,7 +44,7 @@ label.logo {
 }
 nav ul {
   float: right;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   margin-bottom: 0px;
 }
 nav ul li {
@@ -88,6 +94,8 @@ a:hover {
 .cover-photo {
   width: 20%;
   height: 20%;
+  align-self: center;
+  min-width: 150px;
 }
 
 .cover-description {
@@ -164,6 +172,7 @@ a:hover {
 .about-photo {
   width: 25%;
   max-width: 400px;
+  min-width: 200px;
 }
 
 .about-text {
@@ -188,7 +197,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1%;
+  padding-bottom: 5%;
   width: 100%;
 }
 
@@ -225,7 +234,7 @@ hr {
   padding: 4%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  margin-top: auto;
 }
 
 .link-icons {
@@ -243,13 +252,21 @@ hr {
 .fa-bars {
   color: black;
 }
+@media (max-width: 1250px) {
+  .cover-label {
+    font-size: 32pt;
+  }
+}
+
 @media (max-width: 1020px) {
   label.logo {
     font-size: 30px;
-    padding-left: 50px;
   }
   nav ul li a {
     font-size: 16px;
+  }
+  .cover-label {
+    font-size: 28pt;
   }
 }
 @media (max-width: 928px) {
@@ -257,16 +274,25 @@ hr {
     display: block;
   }
 
+  label.logo {
+    /* font-size: 24px; */
+    padding-left: 35px;
+  }
+
   ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #383838;
+    background: #c2c2c2;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
   }
+  nav {
+    padding-right: 25px;
+  }
+
   nav ul li {
     display: block;
     margin: 50px 0;
@@ -277,11 +303,92 @@ hr {
   }
   a:hover,
   a.active {
-    background: #cfcfcf;
+    background: #e2e2e2;
     color: #0082e6;
   }
   #check:checked ~ ul {
     left: 0;
+  }
+
+  .cover-label {
+    display: none;
+  }
+
+  .about-text {
+    font-size: 20px;
+  }
+  .awards-section-label {
+    font-size: 40px;
+  }
+  .award-title {
+    font-size: 26px;
+  }
+
+  .award-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    padding-right: 0px;
+  }
+  label.logo {
+    padding-left: 25px;
+  }
+
+  .cover-label {
+    display: none;
+  }
+  .about-container {
+    /* padding: 3%; */
+  }
+  .about-text {
+    padding: 3% 5%;
+  }
+  .award-description {
+    padding: 3% 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding-right: 0px;
+  }
+  label.logo {
+    font-size: 24px;
+    padding-left: 15px;
+  }
+
+  .top-section {
+    gap: 10%;
+    padding: 20px 25px;
+  }
+
+  .cover-purchase-buttons {
+    /* width: 75%; */
+  }
+  .about-credit {
+    font-size: 10pt;
+  }
+  .about-text {
+    font-size: 20px;
+  }
+
+  /* .award-description {
+    padding: 3% 10%;
+  } */
+
+  .awards-section-label {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .award-title {
+    font-size: 22px;
+  }
+
+  .award-description {
+    font-size: 20px;
   }
 }
 /* section {
