@@ -6,7 +6,6 @@
   line-height: 1.5;
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
-
   /* font-family: "Montserrat"; */
 }
 body {
@@ -148,13 +147,14 @@ a:hover {
   padding: 5px 15px;
   justify-content: center;
   align-items: center;
-  background-color: #0e382a;
-  /* border: 3px solid rgb(203, 203, 203); */
+  /* background-color: #0e382a; */
+  background-color: transparent;
+  border: 3px solid rgb(203, 203, 203);
 }
 .purchase-button:hover {
-  /* border: 3px solid rgb(142, 142, 142); */
-  background-color: #175e46;
-  /* color: rgb(142, 142, 142) !important; */
+  border: 3px solid rgb(142, 142, 142);
+  /* background-color: #175e46; */
+  color: rgb(142, 142, 142) !important;
 }
 
 .purchase-button-text {
