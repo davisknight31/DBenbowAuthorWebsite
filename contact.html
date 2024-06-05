@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dana Benbow</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/027f32df51.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+</html>
+<body>
+  <div class="layout">
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label class="logo"
+        ><a class="logo-link" href="home.html">Dana Benbow</a></label
+      >
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="notable-work.html">Notable Work</a></li>
+        <li><a class="active" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-form-container">
+      <form id="contact-form" onsubmit="sendEmail(); reset(); return false">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Enter your message"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      console.log(document.getElementById("email").value);
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "davisknight7@gmail.com",
+        Password: "E2D2F294E750F8682DE2032E597B8E6AA77B",
+        To: "davisknight7@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form Inquiry",
+        Body: "And this is the body",
+      }).then((message) => alert(message));
+    }
+  </script>
+</body>
