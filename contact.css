@@ -197,3 +197,22 @@ a:hover {
     left: 0;
   }
 }
+
+@media (max-width: 650px) {
+  nav {
+    padding-right: 0px;
+  }
+  label.logo {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding-right: 0px;
+  }
+  label.logo {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+}
