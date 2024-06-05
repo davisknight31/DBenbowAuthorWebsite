@@ -110,14 +110,14 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   font-size: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .notable-work-item {
   width: 100%;
   max-width: 3000px;
-  padding: 0% 15%;
 }
 
 .item-title {
