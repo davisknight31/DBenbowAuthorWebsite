@@ -106,7 +106,8 @@ a:hover {
 
 .about-text {
   max-width: 800px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 20px;
   padding: 20px;
   padding-bottom: 50px;
@@ -120,11 +121,16 @@ hr {
 .questions-container {
   /* padding: 1% 15%; */
   max-width: 800px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 20px;
   padding: 20px;
   padding-bottom: 50px;
-  padding-top: 25px;
+  padding-top: 50px;
+}
+
+.question-and-answer {
+  margin-bottom: 50px;
 }
 
 .question {
@@ -134,7 +140,7 @@ hr {
   font-weight: bold;
   font-size: 24px;
   /* padding: 2% 0%; */
-  margin-top: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .question:hover {

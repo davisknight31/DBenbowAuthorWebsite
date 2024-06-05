@@ -83,5 +83,117 @@ a:hover {
 }
 
 .contact-form-container {
+  margin: auto;
   margin-top: 80px;
+  max-width: 500px;
+  width: 60%;
+  min-width: 250px;
+  font-size: 32px;
+  padding-top: 50px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  gap: 30px;
+}
+
+.contact-form-title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.contact-form-input {
+  background-color: transparent;
+  border: solid 1px rgb(119, 119, 119);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  color: black;
+}
+
+.submit-button {
+  width: 150px;
+  padding: 10px;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #585858;
+}
+
+.footer-container {
+  background: #464646;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.link-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* reactive navbar */
+.fa-bars {
+  color: black;
+}
+
+@media (max-width: 1020px) {
+  label.logo {
+    font-size: 30px;
+    /* padding-left: 50px; */
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 928px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #c2c2c2;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav {
+    padding-right: 25px;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: #e2e2e2;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 }

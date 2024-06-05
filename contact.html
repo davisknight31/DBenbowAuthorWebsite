@@ -35,31 +35,60 @@
     </nav>
 
     <div class="contact-form-container">
-      <form id="contact-form" onsubmit="sendEmail(); reset(); return false">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
+      <div class="contact-form-title">Contact Me</div>
+      <form
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="52a44cd1-a9f6-462b-8c49-b3abea2a9128"
+        />
+        <input
+          class="contact-form-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          class="contact-form-input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
         <textarea
+          class="contact-form-input"
           id="message"
+          name="message"
           rows="4"
-          placeholder="Enter your message"
+          placeholder="Your Message"
         ></textarea>
-        <button type="submit">Send</button>
+        <button class="submit-button" type="submit">Send</button>
       </form>
     </div>
+    <div class="footer-container">
+      <div class="link-icons">
+        <a href="https://twitter.com/DanaBenbow" target="_blank"
+          ><img class="icon" src="./images/x-logo.png"
+        /></a>
+        <a href="https://www.facebook.com/dana.hunsingerbenbow/" target="_blank"
+          ><img class="icon" src="./images/facebook-logo.png"
+        /></a>
+        <a href="https://www.instagram.com/danabenbow/?hl=en" target="_blank"
+          ><img class="icon" src="./images/instagram-logo.png"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/dana-benbow-583388172/"
+          target="_blank"
+          ><img class="icon" src="./images/linkedin-logo.png"
+        /></a>
+      </div>
+    </div>
   </div>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail() {
-      console.log(document.getElementById("email").value);
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "davisknight7@gmail.com",
-        Password: "E2D2F294E750F8682DE2032E597B8E6AA77B",
-        To: "davisknight7@gmail.com",
-        From: document.getElementById("email").value,
-        Subject: "New Contact Form Inquiry",
-        Body: "And this is the body",
-      }).then((message) => alert(message));
-    }
-  </script>
 </body>
