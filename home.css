@@ -6,6 +6,8 @@
   line-height: 1.5;
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
+
+  /* font-family: "Montserrat"; */
 }
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -85,28 +87,32 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  /* width: 100%; */
   padding: 40px 50px;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  /* padding-top: 10vh; */
+  /* padding-bottom: 10vh; */
   margin-top: 80px;
+  gap: 20em;
 }
 
 .cover-photo {
   width: 20%;
   height: 20%;
   align-self: center;
-  min-width: 150px;
+  min-width: 250px;
 }
 
 .cover-description {
-  color: rgb(236, 236, 236);
+  color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 3em;
-  height: 100%;
-  width: 40%;
+  /* height: 100%; */
+  /* width: 40%; */
   margin: 3% 0;
 }
 .cover-label {
@@ -136,17 +142,19 @@ a:hover {
   display: flex;
   color: white;
   font-size: 16px;
-  width: 100%;
+  /* width: 100%; */
+  min-width: 175px;
   gap: 5%;
   padding: 5px 15px;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  border: 3px solid rgb(203, 203, 203);
+  background-color: #0e382a;
+  /* border: 3px solid rgb(203, 203, 203); */
 }
 .purchase-button:hover {
-  border: 3px solid rgb(142, 142, 142);
-  color: rgb(142, 142, 142) !important;
+  /* border: 3px solid rgb(142, 142, 142); */
+  background-color: #175e46;
+  /* color: rgb(142, 142, 142) !important; */
 }
 
 .purchase-button-text {
@@ -179,8 +187,8 @@ a:hover {
 }
 .about-photo {
   display: block;
-  width: 25%;
-  max-width: 400px;
+  width: 50%;
+  max-width: 350px;
   min-width: 200px;
   margin: auto;
 }
@@ -258,9 +266,32 @@ hr {
 .fa-bars {
   color: black;
 }
+
+@media (max-width: 2000px) {
+  .top-section {
+    gap: 18em;
+  }
+}
+
+@media (max-width: 1800px) {
+  .top-section {
+    gap: 15em;
+  }
+}
+
+@media (max-width: 1500px) {
+  .top-section {
+    gap: 12em;
+  }
+}
+
 @media (max-width: 1250px) {
   .cover-label {
     font-size: 32pt;
+  }
+
+  .top-section {
+    gap: 10em;
   }
 }
 
@@ -316,22 +347,18 @@ hr {
     left: 0;
   }
 
+  .top-section {
+    gap: 5em;
+  }
+
   .cover-label {
     display: none;
   }
 
-  .awards-section-label {
-    font-size: 40px;
-  }
-  .award-title {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 750px) {
   .about-text {
     font-size: 18px;
   }
+
   .awards-section-label {
     font-size: 40px;
   }
@@ -341,6 +368,15 @@ hr {
 
   .award-description {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  .awards-section-label {
+    font-size: 40px;
+  }
+  .award-title {
+    font-size: 26px;
   }
 }
 
@@ -355,14 +391,9 @@ hr {
   .cover-label {
     display: none;
   }
-  .about-container {
-    /* padding: 3%; */
-  }
-  .about-text {
-    /* padding: 3% 5%; */
-  }
-  .award-description {
-    /* padding: 3% 5%; */
+
+  .top-section {
+    gap: 2em;
   }
 }
 
@@ -375,32 +406,14 @@ hr {
     padding-left: 20px;
   }
 
-  .top-section {
-    gap: 10%;
-    /* padding: 20px 25px; */
-  }
-
-  .cover-purchase-buttons {
-    /* width: 75%; */
-  }
   .about-credit {
     font-size: 10pt;
   }
 
-  /* .award-description {
-    padding: 3% 10%;
-  } */
-
   .awards-section-label {
     font-size: 30px;
-    /* text-decoration: underline; */
   }
   .award-title {
     font-size: 22px;
   }
 }
-/* section {
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-} */
